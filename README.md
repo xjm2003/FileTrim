@@ -98,12 +98,13 @@ A thin command-line interface that calls the library without duplicating busines
 
 ## Repository Structure
 
+
 ```text
 FileTrim/
 ├── README.md
 ├── pyproject.toml
 ├── src/
-│   └── FileTrim/
+│   └── filetrim/
 │       ├── __init__.py
 │       ├── cli.py
 │       ├── models.py
@@ -116,3 +117,33 @@ FileTrim/
 ├── tests/
 └── .github/
     └── workflows/
+```
+## Current Issue 2 Status
+
+The current filename-generation MVP includes:
+- text normalization
+- title extraction
+- date extraction
+- rule-based document classification
+- filename template selection
+- filename sanitization
+
+Example input text:
+
+```text
+BIOSTAT 821
+Final Project
+Due: April 24, 2026
+```
+
+Example output filename:
+- 2026-04-24-assignment-final-project.pdf
+
+Development
+
+Run tests
+- python -m pytest
+
+Run linting and formatting
+- python -m ruff check .
+- python -m ruff format .

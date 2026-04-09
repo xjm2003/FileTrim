@@ -104,7 +104,7 @@ FileTrim/
 ├── README.md
 ├── pyproject.toml
 ├── src/
-│   └── fileTrim/
+│   └── filetrim/
 │       ├── __init__.py
 │       ├── cli.py
 │       ├── models.py

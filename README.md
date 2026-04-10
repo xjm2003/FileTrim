@@ -118,6 +118,25 @@ FileTrim/
 └── .github/
     └── workflows/
 ```
+## Current Issue 1 Status
+
+The current extraction-layer MVP includes:
+- file type detection based on suffix
+- unified extracted content model
+- extractor interface
+- text extraction for:
+  - `.txt`
+  - `.md`
+  - `.pdf` with text layer
+  - `.docx`
+
+Example extracted output fields:
+- `source_path`
+- `file_type`
+- `suffix`
+- `text`
+- `metadata`
+
 ## Current Issue 2 Status
 
 The current filename-generation MVP includes:
@@ -140,6 +159,12 @@ Example output filename:
 - 2026-04-24-assignment-final-project.pdf
 
 Development
+
+Requirements
+- Python 3.11+
+
+Install dependencies
+- python -m pip install pytest pymupdf python-docx ruff
 
 Run tests
 - python -m pytest
